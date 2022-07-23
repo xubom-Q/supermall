@@ -25,6 +25,7 @@ export default {
   },
   computed: {
     isActive() {
+      // this.$route.path是动态的，this.path是页面上的
       return this.$route.path.indexOf(this.path)
     },
     activeStyle() {
